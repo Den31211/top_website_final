@@ -1108,3 +1108,89 @@ body:not(.home-page) .rating-form input[type="submit"]:hover {
   background-color: #f0ca68;
   border-color: #f0ca68;
 }
+/* Поля входа и регистрации */
+body:not(.home-page) .account-panel {
+  border-color: #30323d;
+  border-radius: 10px;
+  background: #15171e;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, .2);
+}
+
+body:not(.home-page) .account-field {
+  color: #a0a2ad;
+}
+
+body:not(.home-page) .account-field input {
+  color: #f5f5f7;
+  background: #191b23;
+  border: 1px solid #343642;
+  border-radius: 7px;
+  color-scheme: dark;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+body:not(.home-page) .account-field input:focus {
+  border-color: #e5b94c;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(229, 185, 76, .09);
+}
+
+body:not(.home-page) .account-field input::placeholder {
+  color: #858795;
+}
+
+body:not(.home-page) .account-field small {
+  color: #858795;
+}
+/* Кнопка входа и регистрации */
+body:not(.home-page) .account-submit {
+  padding: 0 16px;
+  border: 1px solid #e5b94c;
+  border-radius: 7px;
+  color: #17181d;
+  background: #e5b94c;
+  font-weight: 700;
+  transition: background .2s ease, box-shadow .2s ease,
+              transform .2s ease;
+}
+
+body:not(.home-page) .account-submit:hover {
+  background: #f0ca68;
+  box-shadow: 0 5px 18px rgba(229, 185, 76, .15);
+  transform: translateY(-1px);
+}
+
+body:not(.home-page) .account-submit:active {
+  transform: translateY(0);
+}
+
+/* Ссылки под формой */
+body:not(.home-page) .account-alternate {
+  color: #a0a2ad;
+}
+
+body:not(.home-page) .account-alternate a {
+  color: #e5b94c;
+}
+
+body:not(.home-page) .account-alternate a:hover {
+  color: #f0ca68;
+}
+
+body:not(.home-page) .account-back {
+  color: #a0a2ad;
+}
+
+body:not(.home-page) .account-back:hover {
+  color: #e5b94c;
+}
+
+/* Ошибки формы */
+body:not(.home-page) .account-field .field-error,
+body:not(.home-page) .form-errors {
+  color: #ef8b80;
+}
+
+body:not(.home-page) .account-field input:invalid {
+  border-color: #7e4545;
+}
