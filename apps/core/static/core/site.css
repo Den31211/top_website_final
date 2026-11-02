@@ -818,3 +818,54 @@ h1, h2, h3, p { margin-top: 0; }
     right: 8px;
   }
 }
+/* Адаптивность каталога */
+@media (max-width: 900px) {
+  .home-page .catalog-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .home-page .movie-grid {
+    column-gap: 18px;
+    row-gap: 34px;
+  }
+}
+
+@media (max-width: 620px) {
+  .home-page .catalog-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .home-page .movie-grid {
+    column-gap: 12px;
+    row-gap: 28px;
+  }
+
+  .home-page .movie-title-row {
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+
+  .home-page .movie-title-row h3 {
+    width: 100%;
+  }
+
+  .home-page .movie-year {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .home-page .movie-grid {
+    column-gap: 9px;
+  }
+
+  .home-page .movie-title-row h3 {
+    font-size: 11px;
+  }
+
+  .home-page .genre-line {
+    font-size: 8px;
+  }
+}
