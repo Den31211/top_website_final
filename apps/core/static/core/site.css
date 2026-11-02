@@ -592,3 +592,75 @@ h1, h2, h3, p { margin-top: 0; }
     font-size: 27px;
   }
 }
+
+/* Современная панель поиска */
+.home-page .filter-bar {
+  gap: 10px;
+  margin-bottom: 42px;
+}
+
+.home-page .search-field,
+.home-page .select-field {
+  height: 48px;
+  border: 1px solid #30323d;
+  border-radius: 7px;
+  background: #191b23;
+  transition: border-color .2s ease, background .2s ease,
+              box-shadow .2s ease;
+}
+
+.home-page .search-field:hover,
+.home-page .select-field:hover {
+  border-color: #55515a;
+  background: #1d1f28;
+}
+
+.home-page .search-field:focus-within,
+.home-page .select-field:focus-within {
+  border-color: #e5b94c;
+  box-shadow: 0 0 0 3px rgba(229, 185, 76, .09);
+}
+
+.home-page .search-icon {
+  border-color: #a0a2ad;
+}
+
+.home-page .search-icon::after {
+  background: #a0a2ad;
+}
+
+.home-page .filter-submit {
+  min-width: 112px;
+  height: 48px;
+  padding: 0 20px;
+  border-radius: 7px;
+  transition: background .2s ease, transform .2s ease,
+              box-shadow .2s ease;
+}
+
+.home-page .filter-submit:hover {
+  background: #f0c95e;
+  box-shadow: 0 5px 18px rgba(229, 185, 76, .16);
+  transform: translateY(-2px);
+}
+
+.home-page .filter-submit:active {
+  transform: translateY(0);
+}
+
+.home-page .filter-submit:focus-visible {
+  outline: 2px solid #e5b94c;
+  outline-offset: 3px;
+}
+
+@media (max-width: 620px) {
+  .home-page .filter-bar {
+    margin-bottom: 32px;
+  }
+
+  .home-page .search-field,
+  .home-page .select-field,
+  .home-page .filter-submit {
+    height: 44px;
+  }
+}
