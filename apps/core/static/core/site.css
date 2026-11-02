@@ -459,3 +459,50 @@ h1, h2, h3, p { margin-top: 0; }
   border-radius: 8px;
   background: #15171e;
 }
+
+/* Доработка шапки и мобильной навигации */
+@media (max-width: 900px) {
+  .site-header {
+    width: calc(100% - 48px);
+  }
+
+  .main-nav {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .site-header {
+    height: auto;
+    min-height: 0;
+    flex-wrap: wrap;
+    row-gap: 17px;
+    padding: 13px 0 10px;
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .account-actions {
+    order: 2;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding-bottom: 5px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .nav-link.is-active::after {
+    bottom: -10px;
+  }
+}
