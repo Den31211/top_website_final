@@ -736,3 +736,85 @@ h1, h2, h3, p { margin-top: 0; }
     font-size: 9px;
   }
 }
+/* Финальное оформление постеров каталога */
+.home-page .poster-link {
+  aspect-ratio: 2 / 3;
+  border-radius: 9px;
+  background: #191b23;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .22);
+  isolation: isolate;
+}
+
+.home-page .poster-link::after {
+  background: linear-gradient(
+    to top,
+    rgba(10, 11, 15, .35),
+    transparent 38%
+  );
+  opacity: .75;
+  transition: opacity .3s ease;
+}
+
+.home-page .poster-image,
+.home-page .poster-art {
+  transition:
+    transform .5s cubic-bezier(.2, .7, .2, 1),
+    filter .35s ease;
+}
+
+.home-page .movie-card:hover .poster-image,
+.home-page .movie-card:hover .poster-art {
+  transform: scale(1.045);
+  filter: brightness(1.08);
+}
+
+.home-page .movie-card:hover .poster-link::after {
+  opacity: 1;
+}
+
+.home-page .poster-image {
+  object-position: center;
+}
+
+.home-page .poster-art {
+  border-radius: inherit;
+}
+
+.home-page .format-tag,
+.home-page .rating-tag {
+  top: 12px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, .1);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.home-page .format-tag {
+  left: 12px;
+}
+
+.home-page .rating-tag {
+  right: 12px;
+}
+
+@media (max-width: 620px) {
+  .home-page .poster-link {
+    border-radius: 7px;
+  }
+
+  .home-page .format-tag,
+  .home-page .rating-tag {
+    top: 8px;
+    padding: 5px 7px;
+    font-size: 7px;
+  }
+
+  .home-page .format-tag {
+    left: 8px;
+  }
+
+  .home-page .rating-tag {
+    right: 8px;
+  }
+}
