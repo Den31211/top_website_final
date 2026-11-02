@@ -4,7 +4,6 @@ __pycache__/
 *.pyo
 *.pyd
 *.pyc
-*.sqlite3
 
 # Virtual environments
 .venv/
@@ -19,11 +18,7 @@ ENV/
 Thumbs.db
 
 # Django
-*.log
-/local_settings.py
-/db.sqlite3
-/media/
-/staticfiles/
+
 
 # Environment files
 .env
