@@ -386,3 +386,76 @@ h1, h2, h3, p { margin-top: 0; }
 .home-page .movie-card:hover {
   transform: translateY(-4px);
 }
+/* Улучшенные карточки каталога */
+.home-page .movie-grid {
+  column-gap: 22px;
+  row-gap: 42px;
+}
+
+.home-page .poster-link {
+  border-radius: 8px;
+  background: #1c1e27;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .22);
+  isolation: isolate;
+}
+
+.home-page .poster-link::after {
+  position: absolute;
+  inset: 35% 0 0;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(10, 11, 15, .28)
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.home-page .poster-image,
+.home-page .poster-art {
+  transition: transform .5s cubic-bezier(.2, .7, .2, 1),
+              filter .35s ease;
+}
+
+.home-page .movie-card:hover .poster-image,
+.home-page .movie-card:hover .poster-art {
+  filter: brightness(1.08);
+  transform: scale(1.045);
+}
+
+.home-page .format-tag,
+.home-page .rating-tag {
+  top: 13px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
+}
+
+.home-page .movie-meta {
+  padding: 14px 2px 0;
+}
+
+.home-page .movie-title-row h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.home-page .movie-year {
+  color: #858795;
+}
+
+.home-page .genre-line {
+  margin-top: 7px;
+  color: #858795;
+}
+
+.home-page .movie-title-row h3 a {
+  transition: color .2s ease;
+}
+
+.home-page .empty-state {
+  border-radius: 8px;
+  background: #15171e;
+}
