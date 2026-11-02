@@ -869,3 +869,78 @@ h1, h2, h3, p { margin-top: 0; }
     font-size: 8px;
   }
 }
+/* Пагинация каталога */
+.home-page .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 52px 0 30px;
+  color: #a0a2ad;
+  font-size: 13px;
+}
+
+.home-page .pagination a {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #30323d;
+  border-radius: 7px;
+  color: #f1f1f3;
+  background: #191b23;
+  transition: .2s ease;
+}
+
+.home-page .pagination a:hover {
+  border-color: #e5b94c;
+  color: #e5b94c;
+  background: #22232b;
+}
+
+/* Пустой каталог */
+.home-page .empty-state {
+  padding: 65px 20px;
+  border: 1px solid #30323d;
+  border-radius: 10px;
+  background: #15171e;
+  text-align: center;
+}
+
+.home-page .empty-state h3 {
+  margin-bottom: 10px;
+  color: #f1f1f3;
+  font-size: 22px;
+}
+
+.home-page .empty-state p {
+  color: #a0a2ad;
+  font-size: 14px;
+}
+
+.home-page .empty-mark {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #e5b94c;
+  font-size: 36px;
+}
+
+.home-page .empty-state .text-link {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+@media (max-width: 620px) {
+  .home-page .pagination {
+    gap: 12px;
+    margin-top: 38px;
+  }
+
+  .home-page .empty-state {
+    padding: 45px 16px;
+  }
+
+  .home-page .empty-state h3 {
+    font-size: 19px;
+  }
+}
