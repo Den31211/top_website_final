@@ -1006,3 +1006,105 @@ h1, h2, h3, p { margin-top: 0; }
     font-size: 17px;
   }
 }
+/* Единая тёмно-золотая тема внутренних страниц */
+body:not(.home-page) {
+  --paper: #101116;
+  --paper-deep: #1c1e27;
+  --ink: #f5f5f7;
+  --muted: #a0a2ad;
+  --line: #30323d;
+  --accent: #e5b94c;
+  --accent-dark: #c99b2e;
+
+  color: var(--ink);
+  background: var(--paper);
+  color-scheme: dark;
+}
+
+/* Шапка */
+body:not(.home-page) .site-header {
+  border-color: var(--line);
+}
+
+body:not(.home-page) .nav-link {
+  color: var(--muted);
+}
+
+body:not(.home-page) .nav-link:hover,
+body:not(.home-page) .nav-link.is-active {
+  color: var(--ink);
+}
+
+body:not(.home-page) .brand-period {
+  color: var(--accent);
+}
+
+body:not(.home-page) .brand-mark {
+  color: #17181d;
+  background: var(--accent);
+}
+
+/* Ссылки */
+body:not(.home-page) .back-link {
+  color: var(--muted);
+}
+
+body:not(.home-page) .back-link:hover {
+  color: var(--accent);
+}
+
+body:not(.home-page) .back-link span {
+  color: var(--accent);
+}
+
+/* Нижняя часть */
+body:not(.home-page) .site-footer {
+  border-color: var(--line);
+  color: var(--muted);
+}
+
+body:not(.home-page) .site-footer > span {
+  color: var(--muted);
+}
+
+body:not(.home-page) .site-footer > a:last-child {
+  color: var(--muted);
+}
+
+body:not(.home-page) .site-footer > a:last-child:hover {
+  color: var(--accent);
+}
+
+body:not(.home-page) .site-footer > a:last-child span {
+  color: var(--accent);
+}
+/* Форма оценки фильма */
+body:not(.home-page) .rating-form select {
+  color: #f5f5f7;
+  background-color: #191b23;
+  border: 1px solid #3a3c47;
+  border-radius: 7px;
+  color-scheme: dark;
+}
+
+body:not(.home-page) .rating-form select option {
+  color: #f5f5f7;
+  background-color: #191b23;
+}
+
+body:not(.home-page) .rating-form button,
+body:not(.home-page) .rating-form input[type="submit"] {
+  color: #17181d;
+  background-color: #e5b94c;
+  border: 1px solid #e5b94c;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+body:not(.home-page) .rating-form button:hover,
+body:not(.home-page) .rating-form input[type="submit"]:hover {
+  background-color: #f0ca68;
+  border-color: #f0ca68;
+}
