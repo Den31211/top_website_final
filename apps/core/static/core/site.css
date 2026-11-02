@@ -944,3 +944,65 @@ h1, h2, h3, p { margin-top: 0; }
     font-size: 19px;
   }
 }
+/* Футер главной страницы */
+.home-page .site-footer {
+  min-height: 100px;
+  padding: 22px 0;
+  border-top: 1px solid #30323d;
+  color: #858795;
+  font-size: 11px;
+}
+
+.home-page .brand-small {
+  color: #f1f1f3;
+  font-size: 19px;
+  transition: opacity .2s ease;
+}
+
+.home-page .brand-small:hover {
+  opacity: .75;
+}
+
+.home-page .brand-small .brand-mark {
+  width: 29px;
+  height: 29px;
+  border-radius: 5px;
+  color: #17181d;
+  background: #e5b94c;
+}
+
+.home-page .brand-small .brand-period {
+  color: #e5b94c;
+}
+
+.home-page .site-footer > span {
+  color: #858795;
+  letter-spacing: .2px;
+}
+
+.home-page .site-footer > a:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #a0a2ad;
+  transition: color .2s ease;
+}
+
+.home-page .site-footer > a:last-child span {
+  color: #e5b94c;
+}
+
+.home-page .site-footer > a:last-child:hover {
+  color: #e5b94c;
+}
+
+@media (max-width: 620px) {
+  .home-page .site-footer {
+    min-height: 76px;
+    padding: 18px 0;
+  }
+
+  .home-page .brand-small {
+    font-size: 17px;
+  }
+}
