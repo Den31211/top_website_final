@@ -32,3 +32,25 @@ dist/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+# Django
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+
+# Python cache
+*.log
+.coverage
+htmlcov/
+
+# Test and type checking
+.tox/
+.nox/
+.coverage.*
+
+# Environment
+.python-version
+
+# Temporary files
+*.tmp
+*.bak
