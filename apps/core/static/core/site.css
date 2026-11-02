@@ -280,3 +280,109 @@ h1, h2, h3, p { margin-top: 0; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+/* Главная страница — новая тёмная тема */
+.home-page {
+  --paper: #101116;
+  --paper-deep: #1c1e27;
+  --ink: #f5f5f7;
+  --muted: #a0a2ad;
+  --line: #2b2d38;
+  --accent: #e5b94c;
+  --accent-dark: #c99b2e;
+
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.home-page .site-header {
+  border-color: var(--line);
+}
+
+.home-page .nav-link {
+  color: var(--muted);
+}
+
+.home-page .nav-link:hover,
+.home-page .nav-link.is-active {
+  color: var(--ink);
+}
+
+.home-page .search-field,
+.home-page .select-field {
+  background: #191b23;
+  border-color: #343642;
+}
+.home-page .search-field:focus-within,
+.home-page .select-field:focus-within {
+  border-color: var(--accent);
+}
+
+.home-page .search-field input {
+  color: var(--ink);
+}
+
+.home-page .search-field input::placeholder {
+  color: #858795;
+}
+
+.home-page .select-field select {
+  color: var(--ink);
+  color-scheme: dark;
+}
+
+.home-page .select-field select option {
+  color: var(--ink);
+  background: #191b23;
+}
+
+.home-page .filter-submit {
+  color: #17181d;
+  background: var(--accent);
+  font-weight: 700;
+}
+
+.home-page .filter-submit:hover {
+  background: var(--accent-dark);
+}
+
+.home-page .filter-bar {
+  margin-bottom: 36px;
+}
+.home-page {
+  color-scheme: dark;
+}
+
+.home-page .catalog-intro,
+.home-page .catalog-section,
+.home-page .site-footer {
+  border-color: var(--line);
+}
+
+.home-page .intro-copy h1 em {
+  color: var(--accent);
+}
+
+.home-page .movie-title-row h3 a:hover,
+.home-page .reset-link:hover {
+  color: var(--accent);
+}
+
+.home-page .empty-state {
+  border-color: var(--line);
+}
+
+.home-page .text-link {
+  color: var(--accent);
+}
+
+.home-page .poster-link {
+  border-radius: 5px;
+}
+
+.home-page .movie-card {
+  transition: transform .25s ease;
+}
+
+.home-page .movie-card:hover {
+  transform: translateY(-4px);
+}
