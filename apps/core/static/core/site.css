@@ -1336,3 +1336,46 @@ body:not(.home-page) .rating-box > .text-link:hover {
     padding: 0 10px;
   }
 }
+/* Характеристики фильма */
+body:not(.home-page) .detail-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 0 0 24px;
+}
+
+body:not(.home-page) .detail-facts span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 11px;
+  border: 1px solid #343642;
+  border-radius: 6px;
+  color: #b5b6c0;
+  background: #1c1e27;
+  font-size: 11px;
+}
+
+body:not(.home-page) .detail-facts span:first-child {
+  padding-left: 11px;
+  border-left: 1px solid #343642;
+}
+
+body:not(.home-page) .detail-facts .detail-rating {
+  border-color: rgba(229, 185, 76, .3);
+  color: #e5b94c;
+  background: rgba(229, 185, 76, .08);
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  body:not(.home-page) .detail-facts {
+    gap: 7px;
+  }
+
+  body:not(.home-page) .detail-facts span {
+    min-height: 30px;
+    padding: 0 9px;
+    font-size: 10px;
+  }
+}
