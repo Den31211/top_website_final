@@ -1807,3 +1807,17 @@ body:not(.home-page) .episode-empty {
     bottom: -10px;
   }
 }
+/* Финальный эффект наведения на карточку */
+.home-page .poster-link {
+    border: 1px solid transparent;
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.home-page .movie-card:hover .poster-link {
+    border-color: rgba(229, 185, 76, .65);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .35),
+        0 0 18px rgba(229, 185, 76, .12);
+}
