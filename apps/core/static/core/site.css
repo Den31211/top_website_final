@@ -1722,3 +1722,25 @@ body:not(.home-page) .episode-empty {
     font-size: 10px;
   }
 }
+/* Золотистая черточка при наведении на навигацию */
+.nav-link:hover::after {
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  left: 0;
+  height: 2px;
+  background: var(--accent);
+  content: "";
+}
+
+/* Плавное изменение цвета текста */
+.nav-link:hover {
+  color: var(--ink);
+}
+
+/* Мобильная версия */
+@media (max-width: 620px) {
+  .nav-link:hover::after {
+    bottom: -10px;
+  }
+}
