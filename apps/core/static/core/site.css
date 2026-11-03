@@ -1524,3 +1524,71 @@ body:not(.home-page) .trailer-button:active {
     font-size: 11px;
   }
 }
+/* Улучшенное оформление участников фильма */
+body:not(.home-page) .credits-block {
+  max-width: 760px;
+  margin-top: 38px;
+  padding-top: 25px;
+  border-top: 1px solid #30323d;
+}
+
+body:not(.home-page) .credits-block .eyebrow {
+  margin-bottom: 16px;
+  color: #e5b94c;
+}
+
+/* Сетка карточек */
+body:not(.home-page) .credits-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+/* Карточка участника */
+body:not(.home-page) .credits-list div {
+  min-width: 0;
+  gap: 6px;
+  padding: 13px 15px;
+  border: 1px solid #30323d;
+  border-radius: 7px;
+  background: #191b23;
+  transition: .2s ease;
+}
+
+/* Имя */
+body:not(.home-page) .credits-list strong {
+  color: #f5f5f7;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Роль */
+body:not(.home-page) .credits-list span {
+  color: #a0a2ad;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* Наведение */
+body:not(.home-page) .credits-list div:hover {
+  border-color: rgba(229, 185, 76, .45);
+  background: #1e2029;
+  transform: translateY(-2px);
+}
+
+/* Мобильная версия */
+@media (max-width: 620px) {
+  body:not(.home-page) .credits-block {
+    margin-top: 30px;
+    padding-top: 20px;
+  }
+
+  body:not(.home-page) .credits-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  body:not(.home-page) .credits-list div {
+    padding: 12px;
+  }
+}
