@@ -1469,3 +1469,58 @@ body:not(.home-page) .detail-description p:last-child {
     line-height: 1.8;
   }
 }
+/* Улучшенное оформление кнопки трейлера */
+body:not(.home-page) .trailer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  min-height: 46px;
+  margin-top: 24px;
+  padding: 0 20px;
+  border: 1px solid #e5b94c;
+  border-radius: 7px;
+  color: #17181d;
+  background: #e5b94c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+/* Иконка воспроизведения */
+body:not(.home-page) .trailer-button .play-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  border: 1px solid rgba(23, 24, 29, .3);
+  border-radius: 50%;
+  font-size: 9px;
+  transition: .2s ease;
+}
+
+/* Наведение */
+body:not(.home-page) .trailer-button:hover {
+  border-color: #f0ca68;
+  color: #17181d;
+  background: #f0ca68;
+  box-shadow: 0 7px 22px rgba(229, 185, 76, .2);
+  transform: translateY(-2px);
+}
+
+/* Нажатие */
+body:not(.home-page) .trailer-button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 620px) {
+  body:not(.home-page) .trailer-button {
+    min-height: 43px;
+    margin-top: 20px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+}
