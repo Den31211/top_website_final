@@ -1379,3 +1379,62 @@ body:not(.home-page) .detail-facts .detail-rating {
     font-size: 10px;
   }
 }
+/* Улучшенное оформление жанров */
+body:not(.home-page) .genre-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0 24px;
+}
+
+body:not(.home-page) .genre-tags a,
+body:not(.home-page) .genre-tags span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 0 13px;
+  border: 1px solid #343642;
+  border-radius: 6px;
+  color: #c2c3cb;
+  background: #1c1e27;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  text-decoration: none;
+  transition:
+    color .2s ease,
+    background .2s ease,
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+/* Эффект при наведении */
+body:not(.home-page) .genre-tags a:hover {
+  border-color: #e5b94c;
+  color: #e5b94c;
+  background: rgba(229, 185, 76, .09);
+  box-shadow: 0 4px 14px rgba(229, 185, 76, .08);
+  transform: translateY(-2px);
+}
+
+/* Нажатие */
+body:not(.home-page) .genre-tags a:active {
+  transform: translateY(0);
+}
+
+/* Мобильная версия */
+@media (max-width: 620px) {
+  body:not(.home-page) .genre-tags {
+    gap: 7px;
+    margin: 16px 0 20px;
+  }
+
+  body:not(.home-page) .genre-tags a,
+  body:not(.home-page) .genre-tags span {
+    min-height: 31px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+}
