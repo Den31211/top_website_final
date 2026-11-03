@@ -147,9 +147,26 @@ h1, h2, h3, p { margin-top: 0; }
     letter-spacing: .2px;
 }
 .movie-meta { padding: 12px 1px 0; }
-.movie-title-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
-.movie-title-row h3 { min-width: 0; margin: 0; font-size: 13px; font-weight: 600; line-height: 1.3; }
-.movie-title-row h3 a:hover { color: var(--accent-dark); }
+.movie-title-row h3 {
+    min-width: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.movie-title-row h3 a {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    transition: color .2s ease;
+}
+
+.movie-title-row h3 a:hover {
+    color: var(--accent);
+}
+
 .movie-year { flex: 0 0 auto; color: var(--muted); font-size: 10px; }
 .genre-line { overflow: hidden; margin: 6px 0 0; color: var(--muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
 .genre-line span { color: var(--accent); }
