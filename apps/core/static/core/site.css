@@ -1592,3 +1592,133 @@ body:not(.home-page) .credits-list div:hover {
     padding: 12px;
   }
 }
+/* Улучшенное оформление блока сезонов и серий */
+body:not(.home-page) .episodes-section {
+  max-width: 850px;
+  margin: 65px 0 0 auto;
+}
+
+/* Заголовок раздела */
+body:not(.home-page) .episodes-section .section-heading {
+  margin-bottom: 22px;
+}
+
+body:not(.home-page) .episodes-section .section-heading h2 {
+  color: #f5f5f7;
+}
+
+/* Карточки сезонов */
+body:not(.home-page) .season-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid #30323d;
+  border-radius: 8px;
+  background: #191b23;
+  transition: border-color .2s ease;
+}
+
+body:not(.home-page) .season-item:hover,
+body:not(.home-page) .season-item[open] {
+  border-color: rgba(229, 185, 76, .4);
+}
+
+/* Заголовок сезона */
+body:not(.home-page) .season-item summary {
+  min-height: 60px;
+  padding: 16px 19px;
+  color: #f5f5f7;
+  font-size: 13px;
+  transition: background .2s ease;
+}
+
+body:not(.home-page) .season-item summary:hover {
+  background: #20222c;
+}
+
+body:not(.home-page) .season-item summary small {
+  color: #9294a1;
+}
+
+/* Счётчик серий и индикатор раскрытия */
+body:not(.home-page) .season-count {
+  color: #a0a2ad;
+  font-size: 11px;
+}
+
+body:not(.home-page) .season-count i {
+  display: inline-block;
+  color: #e5b94c;
+  font-size: 19px;
+  transition: transform .2s ease;
+}
+
+body:not(.home-page) .season-item[open] .season-count i {
+  transform: rotate(45deg);
+}
+
+/* Список серий */
+body:not(.home-page) .episode-list {
+  padding: 0 19px 12px;
+}
+
+body:not(.home-page) .episode-list li {
+  min-height: 48px;
+  padding: 10px 0;
+  border-top: 1px solid #30323d;
+  color: #f5f5f7;
+  transition: padding .2s ease, background .2s ease;
+}
+
+body:not(.home-page) .episode-list li:hover {
+  padding-right: 7px;
+  padding-left: 7px;
+  background: rgba(229, 185, 76, .04);
+}
+
+body:not(.home-page) .episode-number {
+  color: #e5b94c;
+  font-weight: 600;
+}
+
+body:not(.home-page) .episode-title {
+  color: #d9dae0;
+  font-size: 12px;
+}
+
+body:not(.home-page) .episode-duration {
+  color: #9294a1;
+  font-size: 10px;
+}
+
+body:not(.home-page) .episode-empty {
+  padding: 15px 0;
+  color: #9294a1;
+}
+
+/* Мобильная версия */
+@media (max-width: 620px) {
+  body:not(.home-page) .episodes-section {
+    margin-top: 45px;
+  }
+
+  body:not(.home-page) .episodes-section .section-heading h2 {
+    font-size: 25px;
+  }
+
+  body:not(.home-page) .season-item summary {
+    min-height: 54px;
+    padding: 13px;
+    font-size: 12px;
+  }
+
+  body:not(.home-page) .episode-list {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  body:not(.home-page) .episode-list li {
+    grid-template-columns: 27px minmax(0, 1fr) auto;
+    gap: 7px;
+    font-size: 10px;
+  }
+}
