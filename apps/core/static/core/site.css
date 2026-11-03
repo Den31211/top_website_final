@@ -1438,3 +1438,34 @@ body:not(.home-page) .genre-tags a:active {
     font-size: 10px;
   }
 }
+/* Улучшенное оформление описания фильма */
+body:not(.home-page) .detail-description {
+  max-width: 760px;
+  margin: 24px 0 30px;
+  padding: 4px 0 4px 18px;
+  border-left: 2px solid #e5b94c;
+  color: #c1c2ca;
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: .1px;
+}
+
+/* Выделение текста при наведении не требуется,
+   сохраняем спокойный внешний вид */
+body:not(.home-page) .detail-description p {
+  margin: 0 0 12px;
+}
+
+body:not(.home-page) .detail-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Мобильная версия */
+@media (max-width: 620px) {
+  body:not(.home-page) .detail-description {
+    margin: 20px 0 24px;
+    padding-left: 13px;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+}
