@@ -17,10 +17,10 @@
       <span class="brand-mark">К</span><span>кадр<span class="brand-period">.</span></span>
     </a>
     <nav class="main-nav" aria-label="Основная навигация">
-      <a class="nav-link is-active" href="{% url 'home' %}">Каталог</a>
-      <a class="nav-link" href="{% url 'home' %}?type=movie">Фильмы</a>
-      <a class="nav-link" href="{% url 'home' %}?type=series">Сериалы</a>
-      <a class="nav-link" href="{% url 'home' %}?type=cartoon">Мультфильмы</a>
+      <a class="nav-link {% if not selected_type %}is-active{% endif %}" href="{% url 'home' %}">Каталог</a>
+      <a class="nav-link {% if selected_type == 'movie' %}is-active{% endif %}" href="{% url 'home' %}?type=movie">Фильмы</a>
+      <a class="nav-link {% if selected_type == 'series' %}is-active{% endif %}" href="{% url 'home' %}?type=series">Сериалы</a>
+      <a class="nav-link {% if selected_type == 'cartoon' %}is-active{% endif %}" href="{% url 'home' %}?type=cartoon">Мультфильмы</a>
     </nav>
     {% if user.is_authenticated %}
       <div class="account-actions"><span class="user-label">{{ user.username }}</span><form method="post" action="{% url 'account-logout' %}">{% csrf_token %}<button class="logout-button" type="submit">Выйти</button></form></div>
