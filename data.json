@@ -1,1048 +1,667 @@
 [
-    {
-        "model": "admin.logentry",
-        "pk": 3,
-        "fields": {
-            "action_time": "2026-10-20T17:20:49.309Z",
-            "user": 3,
-            "content_type": 11,
-            "object_id": "1",
-            "object_repr": "Genre object (1)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 4,
-        "fields": {
-            "action_time": "2026-10-20T17:21:12.108Z",
-            "user": 3,
-            "content_type": 8,
-            "object_id": "1",
-            "object_repr": "russia",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 5,
-        "fields": {
-            "action_time": "2026-10-20T17:21:41.867Z",
-            "user": 3,
-            "content_type": 12,
-            "object_id": "1",
-            "object_repr": "dfsaf (2004)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 6,
-        "fields": {
-            "action_time": "2026-10-20T17:26:23.315Z",
-            "user": 3,
-            "content_type": 12,
-            "object_id": "1",
-            "object_repr": "dfsaf (2004)",
-            "action_flag": 2,
-            "change_message": "[{\"changed\": {\"fields\": [\"Slug\", \"Trailer url\"]}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 7,
-        "fields": {
-            "action_time": "2026-10-20T17:48:41.392Z",
-            "user": 3,
-            "content_type": 11,
-            "object_id": "2",
-            "object_repr": "Genre object (2)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}]"
-        }
-    },
-    {
-        "model": "admin.logentry",
-        "pk": 8,
-        "fields": {
-            "action_time": "2026-10-20T17:49:30.871Z",
-            "user": 3,
-            "content_type": 12,
-            "object_id": "2",
-            "object_repr": "sergsdg (123213)",
-            "action_flag": 1,
-            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"season\", \"object\": \"sergsdg (123213) \\u2014 \\u0421\\u0435\\u0437\\u043e\\u043d 1\"}}]"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 1,
-        "fields": {
-            "name": "Can add log entry",
-            "content_type": 1,
-            "codename": "add_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 2,
-        "fields": {
-            "name": "Can change log entry",
-            "content_type": 1,
-            "codename": "change_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 3,
-        "fields": {
-            "name": "Can delete log entry",
-            "content_type": 1,
-            "codename": "delete_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 4,
-        "fields": {
-            "name": "Can view log entry",
-            "content_type": 1,
-            "codename": "view_logentry"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 5,
-        "fields": {
-            "name": "Can add permission",
-            "content_type": 3,
-            "codename": "add_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 6,
-        "fields": {
-            "name": "Can change permission",
-            "content_type": 3,
-            "codename": "change_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 7,
-        "fields": {
-            "name": "Can delete permission",
-            "content_type": 3,
-            "codename": "delete_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 8,
-        "fields": {
-            "name": "Can view permission",
-            "content_type": 3,
-            "codename": "view_permission"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 9,
-        "fields": {
-            "name": "Can add group",
-            "content_type": 2,
-            "codename": "add_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 10,
-        "fields": {
-            "name": "Can change group",
-            "content_type": 2,
-            "codename": "change_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 11,
-        "fields": {
-            "name": "Can delete group",
-            "content_type": 2,
-            "codename": "delete_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 12,
-        "fields": {
-            "name": "Can view group",
-            "content_type": 2,
-            "codename": "view_group"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 13,
-        "fields": {
-            "name": "Can add content type",
-            "content_type": 4,
-            "codename": "add_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 14,
-        "fields": {
-            "name": "Can change content type",
-            "content_type": 4,
-            "codename": "change_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 15,
-        "fields": {
-            "name": "Can delete content type",
-            "content_type": 4,
-            "codename": "delete_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 16,
-        "fields": {
-            "name": "Can view content type",
-            "content_type": 4,
-            "codename": "view_contenttype"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 17,
-        "fields": {
-            "name": "Can add session",
-            "content_type": 5,
-            "codename": "add_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 18,
-        "fields": {
-            "name": "Can change session",
-            "content_type": 5,
-            "codename": "change_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 19,
-        "fields": {
-            "name": "Can delete session",
-            "content_type": 5,
-            "codename": "delete_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 20,
-        "fields": {
-            "name": "Can view session",
-            "content_type": 5,
-            "codename": "view_session"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 21,
-        "fields": {
-            "name": "Can add пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 6,
-            "codename": "add_movielist"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 22,
-        "fields": {
-            "name": "Can change пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 6,
-            "codename": "change_movielist"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 23,
-        "fields": {
-            "name": "Can delete пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 6,
-            "codename": "delete_movielist"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 24,
-        "fields": {
-            "name": "Can view пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 6,
-            "codename": "view_movielist"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 25,
-        "fields": {
-            "name": "Can add пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 7,
-            "codename": "add_movielistitem"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 26,
-        "fields": {
-            "name": "Can change пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 7,
-            "codename": "change_movielistitem"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 27,
-        "fields": {
-            "name": "Can delete пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 7,
-            "codename": "delete_movielistitem"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 28,
-        "fields": {
-            "name": "Can view пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 7,
-            "codename": "view_movielistitem"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 29,
-        "fields": {
-            "name": "Can add country",
-            "content_type": 8,
-            "codename": "add_country"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 30,
-        "fields": {
-            "name": "Can change country",
-            "content_type": 8,
-            "codename": "change_country"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 31,
-        "fields": {
-            "name": "Can delete country",
-            "content_type": 8,
-            "codename": "delete_country"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 32,
-        "fields": {
-            "name": "Can view country",
-            "content_type": 8,
-            "codename": "view_country"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 33,
-        "fields": {
-            "name": "Can add genre",
-            "content_type": 11,
-            "codename": "add_genre"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 34,
-        "fields": {
-            "name": "Can change genre",
-            "content_type": 11,
-            "codename": "change_genre"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 35,
-        "fields": {
-            "name": "Can delete genre",
-            "content_type": 11,
-            "codename": "delete_genre"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 36,
-        "fields": {
-            "name": "Can view genre",
-            "content_type": 11,
-            "codename": "view_genre"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 37,
-        "fields": {
-            "name": "Can add film",
-            "content_type": 10,
-            "codename": "add_film"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 38,
-        "fields": {
-            "name": "Can change film",
-            "content_type": 10,
-            "codename": "change_film"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 39,
-        "fields": {
-            "name": "Can delete film",
-            "content_type": 10,
-            "codename": "delete_film"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 40,
-        "fields": {
-            "name": "Can view film",
-            "content_type": 10,
-            "codename": "view_film"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 41,
-        "fields": {
-            "name": "Can add пїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 12,
-            "codename": "add_movie"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 42,
-        "fields": {
-            "name": "Can change пїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 12,
-            "codename": "change_movie"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 43,
-        "fields": {
-            "name": "Can delete пїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 12,
-            "codename": "delete_movie"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 44,
-        "fields": {
-            "name": "Can view пїЅпїЅпїЅпїЅпїЅ/пїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 12,
-            "codename": "view_movie"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 45,
-        "fields": {
-            "name": "Can add season",
-            "content_type": 13,
-            "codename": "add_season"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 46,
-        "fields": {
-            "name": "Can change season",
-            "content_type": 13,
-            "codename": "change_season"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 47,
-        "fields": {
-            "name": "Can delete season",
-            "content_type": 13,
-            "codename": "delete_season"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 48,
-        "fields": {
-            "name": "Can view season",
-            "content_type": 13,
-            "codename": "view_season"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 49,
-        "fields": {
-            "name": "Can add episode",
-            "content_type": 9,
-            "codename": "add_episode"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 50,
-        "fields": {
-            "name": "Can change episode",
-            "content_type": 9,
-            "codename": "change_episode"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 51,
-        "fields": {
-            "name": "Can delete episode",
-            "content_type": 9,
-            "codename": "delete_episode"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 52,
-        "fields": {
-            "name": "Can view episode",
-            "content_type": 9,
-            "codename": "view_episode"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 53,
-        "fields": {
-            "name": "Can add пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 14,
-            "codename": "add_news"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 54,
-        "fields": {
-            "name": "Can change пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 14,
-            "codename": "change_news"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 55,
-        "fields": {
-            "name": "Can delete пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 14,
-            "codename": "delete_news"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 56,
-        "fields": {
-            "name": "Can view пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
-            "content_type": 14,
-            "codename": "view_news"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 57,
-        "fields": {
-            "name": "Can add person",
-            "content_type": 15,
-            "codename": "add_person"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 58,
-        "fields": {
-            "name": "Can change person",
-            "content_type": 15,
-            "codename": "change_person"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 59,
-        "fields": {
-            "name": "Can delete person",
-            "content_type": 15,
-            "codename": "delete_person"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 60,
-        "fields": {
-            "name": "Can view person",
-            "content_type": 15,
-            "codename": "view_person"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 61,
-        "fields": {
-            "name": "Can add role",
-            "content_type": 16,
-            "codename": "add_role"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 62,
-        "fields": {
-            "name": "Can change role",
-            "content_type": 16,
-            "codename": "change_role"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 63,
-        "fields": {
-            "name": "Can delete role",
-            "content_type": 16,
-            "codename": "delete_role"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 64,
-        "fields": {
-            "name": "Can view role",
-            "content_type": 16,
-            "codename": "view_role"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 65,
-        "fields": {
-            "name": "Can add review",
-            "content_type": 18,
-            "codename": "add_review"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 66,
-        "fields": {
-            "name": "Can change review",
-            "content_type": 18,
-            "codename": "change_review"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 67,
-        "fields": {
-            "name": "Can delete review",
-            "content_type": 18,
-            "codename": "delete_review"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 68,
-        "fields": {
-            "name": "Can view review",
-            "content_type": 18,
-            "codename": "view_review"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 69,
-        "fields": {
-            "name": "Can add rating",
-            "content_type": 17,
-            "codename": "add_rating"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 70,
-        "fields": {
-            "name": "Can change rating",
-            "content_type": 17,
-            "codename": "change_rating"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 71,
-        "fields": {
-            "name": "Can delete rating",
-            "content_type": 17,
-            "codename": "delete_rating"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 72,
-        "fields": {
-            "name": "Can view rating",
-            "content_type": 17,
-            "codename": "view_rating"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 73,
-        "fields": {
-            "name": "Can add user",
-            "content_type": 19,
-            "codename": "add_customuser"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 74,
-        "fields": {
-            "name": "Can change user",
-            "content_type": 19,
-            "codename": "change_customuser"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 75,
-        "fields": {
-            "name": "Can delete user",
-            "content_type": 19,
-            "codename": "delete_customuser"
-        }
-    },
-    {
-        "model": "auth.permission",
-        "pk": 76,
-        "fields": {
-            "name": "Can view user",
-            "content_type": 19,
-            "codename": "view_customuser"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 1,
-        "fields": {
-            "app_label": "admin",
-            "model": "logentry"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 2,
-        "fields": {
-            "app_label": "auth",
-            "model": "group"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 3,
-        "fields": {
-            "app_label": "auth",
-            "model": "permission"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 4,
-        "fields": {
-            "app_label": "contenttypes",
-            "model": "contenttype"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 5,
-        "fields": {
-            "app_label": "sessions",
-            "model": "session"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 6,
-        "fields": {
-            "app_label": "lists",
-            "model": "movielist"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 7,
-        "fields": {
-            "app_label": "lists",
-            "model": "movielistitem"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 8,
-        "fields": {
-            "app_label": "movies",
-            "model": "country"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 9,
-        "fields": {
-            "app_label": "movies",
-            "model": "episode"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 10,
-        "fields": {
-            "app_label": "movies",
-            "model": "film"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 11,
-        "fields": {
-            "app_label": "movies",
-            "model": "genre"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 12,
-        "fields": {
-            "app_label": "movies",
-            "model": "movie"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 13,
-        "fields": {
-            "app_label": "movies",
-            "model": "season"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 14,
-        "fields": {
-            "app_label": "news",
-            "model": "news"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 15,
-        "fields": {
-            "app_label": "persons",
-            "model": "person"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 16,
-        "fields": {
-            "app_label": "persons",
-            "model": "role"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 17,
-        "fields": {
-            "app_label": "ratings",
-            "model": "rating"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 18,
-        "fields": {
-            "app_label": "ratings",
-            "model": "review"
-        }
-    },
-    {
-        "model": "contenttypes.contenttype",
-        "pk": 19,
-        "fields": {
-            "app_label": "users",
-            "model": "customuser"
-        }
-    },
-    {
-        "model": "sessions.session",
-        "pk": "asf5qv79s9mzjybncg4ctxlxqtablpdh",
-        "fields": {
-            "session_data": ".eJxVjDEOwjAMRe-SGUUyqeOUkZ0zRI5jSAElUtNOiLtDpQ6w_vfef5nI61Li2nWOUzYn48zhd0ssD60byHeut2al1WWekt0Uu9NuLy3r87y7fweFe_nWzKyMyJLEcxgFiAfKA4AqXhGyEjghUhVECAIcBp8djaLgg-DRvD8W4DiT:1xJDT0:w4lBQswSO3zeywn0KiRnIS_015jNlro-3hX4QPWyVDY",
-            "expire_date": "2026-11-03T17:17:38.200Z"
-        }
-    },
-    {
-        "model": "movies.genre",
-        "pk": 1,
-        "fields": {
-            "name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
-            "slug": "detektiv"
-        }
-    },
-    {
-        "model": "movies.genre",
-        "pk": 2,
-        "fields": {
-            "name": "cartoon",
-            "slug": "cartoon"
-        }
-    },
-    {
-        "model": "movies.country",
-        "pk": 1,
-        "fields": {
-            "name": "russia"
-        }
-    },
-    {
-        "model": "movies.movie",
-        "pk": 1,
-        "fields": {
-            "title": "dfsaf",
-            "original_title": "ss",
-            "slug": "sasd",
-            "type": "movie",
-            "year": 2004,
-            "description": "dddddddddddddd",
-            "poster": "",
-            "trailer_url": "https://vkvideo.ru/video-22277933_456242368",
-            "duration": 2,
-            "is_active": true,
-            "created_at": "2026-10-20T17:21:41.859Z",
-            "genres": [
-                1
-            ],
-            "countries": [
-                1
-            ]
-        }
-    },
-    {
-        "model": "movies.movie",
-        "pk": 2,
-        "fields": {
-            "title": "sergsdg",
-            "original_title": "",
-            "slug": "sergsdg",
-            "type": "cartoon",
-            "year": 123213,
-            "description": "asdf",
-            "poster": "",
-            "trailer_url": "",
-            "duration": 20,
-            "is_active": true,
-            "created_at": "2026-10-20T17:49:30.855Z",
-            "genres": [
-                2
-            ],
-            "countries": [
-                1
-            ]
-        }
-    },
-    {
-        "model": "movies.season",
-        "pk": 1,
-        "fields": {
-            "series": 2,
-            "number": 1,
-            "title": "dd"
-        }
-    },
-    {
-        "model": "ratings.rating",
-        "pk": 1,
-        "fields": {
-            "user": 3,
-            "movie": 1,
-            "score": 10,
-            "created_at": "2026-10-20T17:22:56.729Z"
-        }
-    },
-    {
-        "model": "users.customuser",
-        "pk": 3,
-        "fields": {
-            "password": "pbkdf2_sha256$1500000$MmbyGtyGKr1cGI0cV0kJvP$tTGe/bGONyozenUmglsD3haE4nIujob7X3xL4uTLUPY=",
-            "last_login": "2026-10-20T17:17:38.128Z",
-            "is_superuser": true,
-            "first_name": "",
-            "last_name": "",
-            "is_staff": true,
-            "is_active": true,
-            "date_joined": "2026-10-20T17:14:30.554Z",
-            "username": "denis",
-            "email": "denis.dzhanaev@mail.ru",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "users.customuser",
-        "pk": 4,
-        "fields": {
-            "password": "pbkdf2_sha256$1500000$pJCElBP4Cy5px00FfNYUgo$MTktnhDUL9K6zc6jVhC2nWrh+2opFOJxJxV2IRLIo4k=",
-            "last_login": "2026-10-20T17:17:01.803Z",
-            "is_superuser": false,
-            "first_name": "",
-            "last_name": "",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2026-10-20T17:16:59.785Z",
-            "username": "asdasd",
-            "email": "asd@mail.ru",
-            "groups": [],
-            "user_permissions": []
-        }
-    }
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-11-02T19:11:45.534Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Genre object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-11-02T19:11:58.419Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "США, Великобритания",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-11-02T19:12:14.543Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Интерстеллар (2014)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-11-02T19:14:35.066Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Genre object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-11-02T19:15:53.989Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Тёмный рыцарь (2008)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-11-02T19:17:15.409Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Genre object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-11-02T19:17:33.274Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "США",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-11-02T19:17:44.374Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Во все тяжкие (2008)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-11-02T19:19:03.931Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Genre object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-11-02T19:19:12.297Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Канада, США",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-11-02T19:19:28.828Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Человек-паук: Через вселенные (2018)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-11-02T19:20:27.324Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Тёмный рыцарь (2008)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0440\\u0438\\u0433\\u0438\\u043d\\u0430\\u043b\\u044c\\u043d\\u043e\\u0435 \\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-11-03T17:25:01.861Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Человек-паук: Через вселенные (2018)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Poster\", \"Trailer url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-11-03T17:26:51.930Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "Интерстеллар (2014)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Poster\", \"Trailer url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-11-03T17:27:59.175Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Во все тяжкие (2008)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Poster\", \"Trailer url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-11-03T17:29:28.433Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Тёмный рыцарь (2008)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Poster\", \"Trailer url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-11-03T17:33:13.260Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Во все тяжкие (2008)",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"season\", \"object\": \"\\u0412\\u043e \\u0432\\u0441\\u0435 \\u0442\\u044f\\u0436\\u043a\\u0438\\u0435 (2008) \\u2014 \\u0421\\u0435\\u0437\\u043e\\u043d 1\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-11-03T17:42:29.719Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Во все тяжкие (2008) — Сезон 1",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"episode\", \"object\": \"Episode object (1)\"}}, {\"added\": {\"name\": \"episode\", \"object\": \"Episode object (2)\"}}, {\"added\": {\"name\": \"episode\", \"object\": \"Episode object (3)\"}}, {\"added\": {\"name\": \"episode\", \"object\": \"Episode object (4)\"}}, {\"added\": {\"name\": \"episode\", \"object\": \"Episode object (5)\"}}, {\"added\": {\"name\": \"episode\", \"object\": \"Episode object (6)\"}}, {\"added\": {\"name\": \"episode\", \"object\": \"Episode object (7)\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-11-19T18:37:17.267Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Роберт Паттинсон сыграет Джеймса Бонда в фильме Дени Вильнёва",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-11-20T20:18:45.285Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Роберт Паттинсон сыграет Джеймса Бонда в фильме Дени Вильнёва",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-11-20T20:21:09.571Z",
+    "user": 1,
+    "content_type": 19,
+    "object_id": "1",
+    "object_repr": "denis.dzhanaev@mail.ru",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-11-20T20:21:19.616Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "Роберт Паттинсон сыграет Джеймса Бонда в фильме Дени Вильнёва",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-11-20T20:24:05.707Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "Маколей Калкин сыграет в новой части «Один дома»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-11-20T20:26:48.221Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "Умер Патрик Стюарт",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-11-20T20:28:47.010Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "Джеймс Ганн и Питер Сафран больше не будут возглавлять DC Studios",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b0dbfgyegzqmql6imizf9zq0msbu605d",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYrqBOKEsTtviBwHF9oKJAJT1b9XSAztene6NyTetzHtdVjTVKADhMsvyyzPYT5EefB8X4ws87ZO2RyJOW01_VKG1-1s_wYj1xE6EEuclcgGaktsmMWpsDrrsjZEPnBkd209oUbW4Nl6aSyihigFI8LnC_GzN-E:1xU6wP:nd6xd4XmUkEpmrXJluJubjfwcSUAlJDOeJpYrq2LA0g",
+    "expire_date": "2026-12-03T18:33:01.392Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ehmavj67eaom06y6u866m7nl5jx8ujfn",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCBlgGX7nsGMgyMVA0kpV0Z765NutDtf-_9lwi4rSVsPS9hTuIilDj9bhHpkesO0h3rrUlqdV3mKHdFHrTLqaX8vB7u30HBXr41acDIANrBmPyASIYJ2WgTeQCwDj2a82hBsUd2FrWlQSvFzlNSXon3B_GzN-E:1xOHtw:K8G8S5KfT7ktxIan3Oi1C1xeuEBk9rouEkVGs0Y_kMw",
+    "expire_date": "2026-11-17T17:02:24.491Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gc771sz8yr8jk3goxu4qocf7yo2kayz7",
+  "fields": {
+    "session_data": ".eJxVjDEOgzAMAP_iuYrqBOKEsTtviBwHF9oKJAJT1b9XSAztene6NyTetzHtdVjTVKADhMsvyyzPYT5EefB8X4ws87ZO2RyJOW01_VKG1-1s_wYj1xE6EEuclcgGaktsmMWpsDrrsjZEPnBkd209oUbW4Nl6aSyihigFI8LnC_GzN-E:1xUUis:7ebAK92AQfg0v3Nz_75-YR1A6jVT9ncfweycvQHP1xc",
+    "expire_date": "2026-12-04T19:56:38.034Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ys21at1qd3bzhiux211evof5qa1apkx5",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hCBlgGX7nsGMgyMVA0kpV0Z765NutDtf-_9lwi4rSVsPS9hTuIilDj9bhHpkesO0h3rrUlqdV3mKHdFHrTLqaX8vB7u30HBXr41acDIANrBmPyASIYJ2WgTeQCwDj2a82hBsUd2FrWlQSvFzlNSXon3B_GzN-E:1xOHtu:mjm454XKJODa8sdkcrfHJnVJD00wa6UClPh8I4vDq-s",
+    "expire_date": "2026-11-17T17:02:22.823Z"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Фантастика, Драма, Приключения",
+    "slug": "fantastika-drama-priklyucheniya"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Боевик, Драма, Криминал",
+    "slug": "boevik-drama-kriminal"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Драма, Криминал, Триллер",
+    "slug": "drama-kriminal-triller"
+  }
+},
+{
+  "model": "movies.genre",
+  "pk": 4,
+  "fields": {
+    "name": "мультфильм, фантастика, фэнтези, боевик, комедия,",
+    "slug": "multfilm-fantastika-fentezi-boevik-komediya"
+  }
+},
+{
+  "model": "movies.country",
+  "pk": 1,
+  "fields": {
+    "name": "США, Великобритания"
+  }
+},
+{
+  "model": "movies.country",
+  "pk": 2,
+  "fields": {
+    "name": "США"
+  }
+},
+{
+  "model": "movies.country",
+  "pk": 3,
+  "fields": {
+    "name": "Канада, США"
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 1,
+  "fields": {
+    "title": "Интерстеллар",
+    "original_title": "interstellar",
+    "slug": "interstellar",
+    "type": "movie",
+    "year": 2014,
+    "description": "Когда Земля становится непригодной для жизни, группа исследователей отправляется искать новый дом для человечества.",
+    "poster": "posters/70487-1000x830.jpg",
+    "trailer_url": "https://vkvideo.ru/video-29417489_456241582",
+    "duration": 169,
+    "is_active": true,
+    "created_at": "2026-11-02T19:12:14.532Z",
+    "genres": [
+      1
+    ],
+    "countries": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 2,
+  "fields": {
+    "title": "Тёмный рыцарь",
+    "original_title": "The dark knight",
+    "slug": "the-dark-knight",
+    "type": "movie",
+    "year": 2008,
+    "description": "Бэтмен поднимает ставки в войне с криминалом. С помощью лейтенанта Джима Гордона и прокурора Харви Дента он намерен очистить улицы от преступности, отравляющей город. Сотрудничество оказывается эффективным, но скоро они обнаружат себя посреди хаоса, развязанного восходящим криминальным гением, известным испуганным горожанам под именем Джокер.",
+    "poster": "posters/15906.jpg",
+    "trailer_url": "https://vkvideo.ru/video-220787057_456312016",
+    "duration": 152,
+    "is_active": true,
+    "created_at": "2026-11-02T19:15:53.978Z",
+    "genres": [
+      2
+    ],
+    "countries": [
+      1
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 3,
+  "fields": {
+    "title": "Во все тяжкие",
+    "original_title": "breaking-bad",
+    "slug": "breaking-bad",
+    "type": "series",
+    "year": 2008,
+    "description": "Школьный учитель химии Уолтер Уайт узнаёт, что болен раком лёгких. Учитывая сложное финансовое состояние дел семьи, а также перспективы, Уолтер решает заняться изготовлением метамфетамина. Для этого он привлекает своего бывшего ученика Джесси Пинкмана, когда-то исключённого из школы при активном содействии Уайта. Пинкман сам занимался варкой мета, но накануне, в ходе рейда УБН, он лишился подельника и лаборатории.",
+    "poster": "posters/images.jfif",
+    "trailer_url": "https://vkvideo.ru/video-144451902_456240053",
+    "duration": null,
+    "is_active": true,
+    "created_at": "2026-11-02T19:17:44.363Z",
+    "genres": [
+      3
+    ],
+    "countries": [
+      2
+    ]
+  }
+},
+{
+  "model": "movies.movie",
+  "pk": 4,
+  "fields": {
+    "title": "Человек-паук: Через вселенные",
+    "original_title": "Spider-Man: Into the Spider-Verse",
+    "slug": "spider-man-into-the-spider-verse",
+    "type": "cartoon",
+    "year": 2018,
+    "description": "Мы всё знаем о Питере Паркере. Он спас город, влюбился, а потом спасал город снова и снова… Но все это – в нашем измерении. А что если в результате работы гигантского коллайдера откроется окно из одного измерения в другое? Найдется ли в нем свой Человек-паук? И как он будет выглядеть? Приготовьтесь к тому, что в разных вселенных могут быть разные Люди-пауки и однажды им придется собраться вместе для борьбы с почти непобедимым врагом.",
+    "poster": "posters/images_17.jfif",
+    "trailer_url": "https://vkvideo.ru/video-29710373_456239101",
+    "duration": 117,
+    "is_active": true,
+    "created_at": "2026-11-02T19:19:28.818Z",
+    "genres": [
+      4
+    ],
+    "countries": [
+      3
+    ]
+  }
+},
+{
+  "model": "movies.season",
+  "pk": 1,
+  "fields": {
+    "series": 3,
+    "number": 1,
+    "title": "season 1"
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 1,
+  "fields": {
+    "season": 1,
+    "number": 1,
+    "title": "Пилотная",
+    "duration": 45
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 2,
+  "fields": {
+    "season": 1,
+    "number": 2,
+    "title": "Кот в мешке...",
+    "duration": 48
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 3,
+  "fields": {
+    "season": 1,
+    "number": 3,
+    "title": "... и мешок в реке",
+    "duration": 47
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 4,
+  "fields": {
+    "season": 1,
+    "number": 4,
+    "title": "Раковый больной",
+    "duration": 44
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 5,
+  "fields": {
+    "season": 1,
+    "number": 5,
+    "title": "Серое вещество",
+    "duration": 46
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 6,
+  "fields": {
+    "season": 1,
+    "number": 6,
+    "title": "Первый будет заниматься сбытом, а второй...",
+    "duration": 45
+  }
+},
+{
+  "model": "movies.episode",
+  "pk": 7,
+  "fields": {
+    "season": 1,
+    "number": 7,
+    "title": "Бизнес \"по-взрослому\"",
+    "duration": 47
+  }
+},
+{
+  "model": "news.news",
+  "pk": 1,
+  "fields": {
+    "title": "Роберт Паттинсон сыграет Джеймса Бонда в фильме Дени Вильнёва",
+    "slug": "bond",
+    "cover": "news/images_yLuxXwR.jpg",
+    "body": "Amazon MGM Studios назвала следующего исполнителя роли Джеймса Бонда: им станет Роберт Паттинсон.\r\n\r\nЗвезда «Бэтмена», «Маяка» и «Одиссеи» сыграет агента 007 в грядущей картине по франшизе, постановщиком которой выступит Дени Вильнёв («Дюна», «Бегущий по лезвию 2049»). К анонсу показали и первое фото с актером в образе. Сам Паттинсон назвал эту роль высочайшей честью для себя.\r\nПодробностей о самом фильме на данный момент нет, как и его ориентировочной даты релиза. Вильнёва, который не раз называл себя большим поклонником бондианы, объявили режиссером ленты еще летом 2025-го.\r\n\r\nС 2006 по 2020 год Джеймса Бонда играл Дэниэл Крэйг, исполнивший эту роль в пяти картинах, начиная с «Казино Рояль». Последней его работой в образе был фильм «Не время умирать».",
+    "author": 1,
+    "is_published": true,
+    "published_at": "2026-11-19T18:37:17.265Z",
+    "updated_at": "2026-11-20T20:21:19.615Z"
+  }
+},
+{
+  "model": "news.news",
+  "pk": 2,
+  "fields": {
+    "title": "Маколей Калкин сыграет в новой части «Один дома»",
+    "slug": "odin-doma-new",
+    "cover": "news/Odin-doma-2_NItPlx4.jpg",
+    "body": "Маколей Калкин сыграет Кевина в новой части «Один дома». Фильм находится на ранней стадии разработки.\r\n\r\nВ основу сюжета ляжет идея самого Калкина показать взрослого героя, который растит ребенка в одиночку. Обиженный из-за нехватки внимания сын расставляет в доме ловушки для своего отца.\r\n\r\nСценаристами и продюсерами выступят Сет Роген и Эван Голдберг, которые работали над «Киностудией». Первую и вторую часть «Один дома» снял Крис Коламбус. Неизвестно, кто выступит режиссером новой рождественской комедии.\r\n\r\nНедавно Маколей Калкин уже возвращался к образу Кевина в праздничной рекламе McDonald's.",
+    "author": 1,
+    "is_published": true,
+    "published_at": "2026-11-20T20:24:05.706Z",
+    "updated_at": "2026-11-20T20:24:05.706Z"
+  }
+},
+{
+  "model": "news.news",
+  "pk": 3,
+  "fields": {
+    "title": "Умер Патрик Стюарт",
+    "slug": "umer-patrik-styuart",
+    "cover": "news/patrik_stuart_pAh8lp3.jpg",
+    "body": "Британский актер Патрик Стюарт умер в возрасте 86 лет. Он скончался в своем доме в Лос-Анджелесе. По словам представителя актера, тот страдал болезнью Альцгеймера и деменцией с тельцами Леви.\r\n\r\nСтюарт родился 13 июля 1940 года, а карьеру начал в театре. Мировую известность ему принесла роль капитана Жан-Люка Пикара в сериале «Звездный путь: Следующее поколение», который выходил с 1987 по 1994 год. Патрик Стюарт вернулся к этому персонажу в нескольких полнометражных фильмах франшизы, а затем сыграл его вновь в сериале «Звездный путь: Пикар», завершившемся в 2023 году.\r\n\r\nЕще одна знаковая роль актера — профессор Чарльз Ксавьер из серии фильмов «Люди Икс». Впервые Стюарт сыграл основателя команды мутантов в картине Брайана Сингера 2000 года. Он возвращался к образу на протяжении более двух десятилетий, в том числе в фильмах «Логан» и «Мстители: Доктор Дум».\r\n\r\nПомимо этого, Стюарт снимался в «Дюне» Дэвида Линча, работал над озвучиванием и выступал с театральными постановками. За свою карьеру актер получил три премии «Сатурн» и одну «Грэмми», номинировался на «Эмми» и «Золотой глобус». В 2010 году королева Елизавета II посвятила его в рыцари за заслуги перед драматическим искусством.",
+    "author": 1,
+    "is_published": true,
+    "published_at": "2026-11-20T20:26:48.211Z",
+    "updated_at": "2026-11-20T20:26:48.211Z"
+  }
+},
+{
+  "model": "news.news",
+  "pk": 4,
+  "fields": {
+    "title": "Джеймс Ганн и Питер Сафран больше не будут возглавлять DC Studios",
+    "slug": "DC-studios",
+    "cover": "news/DC_09OBhap.jpeg",
+    "body": "Джеймс Ганн и Питер Сафран покидают посты соруководителей DC Studios. Новым главой подразделения назначен Джереми Латчем, который много лет работал в Marvel и был продюсером в том числе «Мстителей» и «Стражей Галактики».\r\n\r\nИзначально предполагалось, что Ганн и Сафран сохранят свои должности после слияния Warner Bros. Discovery и Paramount. Точные причины кадровых перестановок не называют. Изменения вступят в силу 1 декабря.\r\n\r\nДуэт занимался масштабной перезагрузкой киновселенной DC. За четыре года под руководством Ганна и Сафрана вышло три полнометражных фильма («Супермен», «Супергёрл» и «Клэйфейс») и три игровых сериала («Пингвин», второй сезон «Миротворца» и «Фонари»). После ухода со своих постов бывшие главы вернутся к творческой деятельности.",
+    "author": 1,
+    "is_published": true,
+    "published_at": "2026-11-20T20:28:47.001Z",
+    "updated_at": "2026-11-20T20:28:47.001Z"
+  }
+},
+{
+  "model": "ratings.rating",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "movie": 4,
+    "score": 10,
+    "created_at": "2026-11-03T17:02:31.078Z"
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$CMsB4KKp06fDHFj8Q4n3kg$vTAjB5VO1NfkbCOO7remfotCfKnPAr3OGO1zI/vWgxs=",
+    "last_login": "2026-11-20T19:56:38Z",
+    "is_superuser": true,
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-02T17:32:53Z",
+    "username": "denis",
+    "email": "denis.dzhanaev@mail.ru",
+    "groups": [],
+    "user_permissions": []
+  }
+}
 ]
