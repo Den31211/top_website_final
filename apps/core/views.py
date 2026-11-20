@@ -14,7 +14,7 @@ from rest_framework import permissions
 from django.contrib.auth import get_user_model
 from apps.movies.models import Genre, Movie
 from apps.ratings.models import Rating, Review
-
+from apps.news.models import News
 
 # Create your views here.
 
@@ -60,7 +60,13 @@ def home(request):
     movies = movies.order_by(*ordering_options.get(ordering, ordering_options['newest']))
 
     page_obj = Paginator(movies.distinct(), 12).get_page(request.GET.get('page'))
+    latest_news = (
+        News.objects.filter(is_published=True)
+        .select_related('author')
+        .order_by('-published_at')[:3]
+    )
     return render(request, 'core/home.html', {
+        'latest_news': latest_news,
         'page_obj': page_obj,
         'genres': Genre.objects.order_by('name'),
         'query': query,
@@ -195,3 +201,31 @@ class StatsView(APIView):
             'ratings_count': Rating.objects.count(),
             'reviews_count': Review.objects.count(),
         })
+
+def news_list(request):
+    news_qs = (
+        News.objects.filter(is_published=True)
+        .select_related('author')
+        .order_by('-published_at')
+    )
+    page_obj = Paginator(news_qs, 9).get_page(request.GET.get('page'))
+    return render(request, 'core/news_list.html', {
+        'page_obj': page_obj,
+        'total_news': news_qs.count(),
+    })
+
+
+def news_detail(request, slug):
+    article = get_object_or_404(
+        News.objects.filter(is_published=True).select_related('author'),
+        slug=slug,
+    )
+    related_news = (
+        News.objects.filter(is_published=True)
+        .exclude(pk=article.pk)
+        .order_by('-published_at')[:3]
+    )
+    return render(request, 'core/news_detail.html', {
+        'article': article,
+        'related_news': related_news,
+    })

@@ -1,0 +1,123 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ article.title }} — Кадр</title>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'core/site.css' %}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{% url 'home' %}">
+      <span class="brand-mark">К</span>
+      <span>кадр<span class="brand-period">.</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Разделы">
+      <a class="nav-link" href="{% url 'home' %}">Каталог</a>
+      <a class="nav-link" href="{% url 'home' %}?type=movie">Фильмы</a>
+      <a class="nav-link" href="{% url 'home' %}?type=series">Сериалы</a>
+      <a class="nav-link" href="{% url 'home' %}?type=cartoon">Мультфильмы</a>
+      <a class="nav-link is-active" href="{% url 'web-news-list' %}">Новости</a>
+    </nav>
+
+    <div class="account-actions">
+      {% if user.is_authenticated %}
+        <span class="user-label">{{ user.username }}</span>
+        <form method="post" action="{% url 'account-logout' %}">
+          {% csrf_token %}
+          <button class="logout-button" type="submit">Выйти</button>
+        </form>
+      {% else %}
+        <a class="header-action" href="{% url 'account-login' %}">
+          <span class="header-action-label">Войти</span>
+          <span class="arrow-icon">↗</span>
+        </a>
+        <a class="register-link" href="{% url 'account-register' %}">Регистрация</a>
+      {% endif %}
+    </div>
+  </header>
+
+  <main class="detail-main">
+    <a class="back-link" href="{% url 'web-news-list' %}">
+      <span>←</span> Все новости
+    </a>
+
+    <article class="article-container">
+      <header class="article-header">
+        <p class="eyebrow"><span class="eyebrow-dot"></span>НОВОСТИ КИНО</p>
+        <h1>{{ article.title }}</h1>
+
+        <div class="detail-facts">
+          <span>{{ article.published_at|date:"d E Y, H:i" }}</span>
+          {% if article.author %}
+            <span class="detail-rating">Автор: {{ article.author.username }}</span>
+          {% endif %}
+        </div>
+      </header>
+
+      {% if article.cover %}
+        <div class="article-cover-wrap">
+          <img class="article-cover" src="{{ article.cover.url }}" alt="{{ article.title }}">
+        </div>
+      {% endif %}
+
+      <div class="detail-description article-body">
+        {{ article.body|linebreaks }}
+      </div>
+    </article>
+
+    {% if related_news %}
+      <section class="related-news-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span>ЧИТАЙТЕ ТАКЖЕ</p>
+            <h2>Другие публикации</h2>
+          </div>
+          <a class="reset-link" href="{% url 'web-news-list' %}">Все новости <span>↗</span></a>
+        </div>
+
+        <div class="news-grid">
+          {% for item in related_news %}
+            <article class="news-card">
+              <a class="news-cover-link" href="{% url 'web-news-detail' item.slug %}">
+                {% if item.cover %}
+                  <img class="news-cover-image" src="{{ item.cover.url }}" alt="{{ item.title }}">
+                {% else %}
+                  <div class="news-cover-placeholder">
+                    <span>КАДР / ЖУРНАЛ</span>
+                    <strong>{{ item.title|truncatechars:42 }}</strong>
+                  </div>
+                {% endif %}
+                <span class="news-date-tag">{{ item.published_at|date:"d.m.Y" }}</span>
+              </a>
+
+              <div class="news-card-body">
+                <h3>
+                  <a href="{% url 'web-news-detail' item.slug %}">{{ item.title }}</a>
+                </h3>
+                <a class="news-read-more" href="{% url 'web-news-detail' item.slug %}">
+                  Читать <span>→</span>
+                </a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-small" href="{% url 'home' %}">
+      <span class="brand-mark">К</span>
+      <span>кадр<span class="brand-period">.</span></span>
+    </a>
+    <span>Найти историю по душе.</span>
+    <a href="/api/news/{{ article.slug }}/">API <span>↗</span></a>
+  </footer>
+</body>
+</html>

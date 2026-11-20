@@ -21,10 +21,22 @@ from django.conf.urls.static import static
 from apps.core.views import (
     account_login, account_logout, account_register, home, movie_detail, rate_movie,
 )
+from apps.core.views import (
+    account_login, account_logout, account_register,
+    home, movie_detail, news_detail, news_list, rate_movie,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
+    path('', home, name='home'),
+    path('title/<slug:slug>/', movie_detail, name='web-movie-detail'),
+    path('news/', news_list, name='web-news-list'),
+    path('news/<slug:slug>/', news_detail, name='web-news-detail'),
+    path('account/login/', account_login, name='account-login'),
+    path('account/register/', account_register, name='account-register'),
+    path('account/logout/', account_logout, name='account-logout'),
+    path('title/<slug:slug>/rate/', rate_movie, name='rate-movie'),
     path('', home, name='home'),
     path('title/<slug:slug>/', movie_detail, name='web-movie-detail'),
     path('account/login/', account_login, name='account-login'),

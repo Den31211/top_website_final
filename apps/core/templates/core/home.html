@@ -21,6 +21,7 @@
     <a class="nav-link {% if request.GET.type == 'movie' %}is-active{% endif %}" href="{% url 'home' %}?type=movie">Фильмы</a>
     <a class="nav-link {% if request.GET.type == 'series' %}is-active{% endif %}" href="{% url 'home' %}?type=series">Сериалы</a>
     <a class="nav-link {% if request.GET.type == 'cartoon' %}is-active{% endif %}" href="{% url 'home' %}?type=cartoon">Мультфильмы</a>
+    <a class="nav-link" href="{% url 'web-news-list' %}">Новости</a>
   </nav>
 
     {% if user.is_authenticated %}
@@ -139,6 +140,54 @@
         </nav>
       {% endif %}
     </section>
+    {% if latest_news %}
+      <section class="home-news-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span>ЖУРНАЛ / КИНО И ИНДУСТРИЯ</p>
+            <h2>Последние новости</h2>
+          </div>
+          <a class="reset-link" href="{% url 'web-news-list' %}">Все новости <span>↗</span></a>
+        </div>
+
+        <div class="news-grid">
+          {% for item in latest_news %}
+            <article class="news-card">
+              <a class="news-cover-link" href="{% url 'web-news-detail' item.slug %}">
+                {% if item.cover %}
+                  <img class="news-cover-image" src="{{ item.cover.url }}" alt="{{ item.title }}">
+                {% else %}
+                  <div class="news-cover-placeholder">
+                    <span>КАДР / ЖУРНАЛ</span>
+                    <strong>{{ item.title|truncatechars:42 }}</strong>
+                  </div>
+                {% endif %}
+                <span class="news-date-tag">{{ item.published_at|date:"d.m.Y" }}</span>
+              </a>
+
+              <div class="news-card-body">
+                <div class="news-meta-line">
+                  <span>{{ item.published_at|date:"d E Y" }}</span>
+                  {% if item.author %}
+                    <span>· {{ item.author.username }}</span>
+                  {% endif %}
+                </div>
+
+                <h3>
+                  <a href="{% url 'web-news-detail' item.slug %}">{{ item.title }}</a>
+                </h3>
+
+                <p class="news-excerpt">{{ item.body|truncatechars:135 }}</p>
+
+                <a class="news-read-more" href="{% url 'web-news-detail' item.slug %}">
+                  Читать статью <span>→</span>
+                </a>
+              </div>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
   </main>
 
   <footer class="site-footer">
